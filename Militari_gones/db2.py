@@ -82,7 +82,7 @@ resp_form = DBQuery_form(f'FORM{bd_priz}')
 
 df = DBWorker.Control_in_army(DBWorker, resp_form, resp_med, len(resp_med))
 
-print("\n Пофомильный списрк контрольников убывших в войска (силы) \n")
+print("\n Пофамильный списрк убывших \n")
 for i in range(0, len(df)):
     temp_df = df[i]
     print(f'{temp_df[0][0]} {temp_df[0][1]} {temp_df[0][2]} | Убыл в РА')    
